@@ -71,20 +71,12 @@ export default function TeacherCard({ teacher }) {
           )}
         </div>
 
-        <div className="flex space-x-2">
+        <div className="mt-4 flex space-x-2">
           <Link 
             to={`/teacher/${teacher.id}`}
             className="flex-1 flex items-center justify-center bg-[#f49c30] text-white py-2 rounded-lg hover:bg-[#e68a1a] transition-colors"
           >
-            <BookOpenIcon className="h-4 w-4 mr-1" />
             <span>View Details</span>
-          </Link>
-          <Link 
-            to={`/messages/${teacher.id}`}
-            className="flex-1 flex items-center justify-center border border-[#f49c30] text-[#f49c30] py-2 rounded-lg hover:bg-[#f49c30]/10 transition-colors"
-          >
-            <ChatBubbleLeftIcon className="h-4 w-4 mr-1" />
-            <span>Message</span>
           </Link>
         </div>
       </div>

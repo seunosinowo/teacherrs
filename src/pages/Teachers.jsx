@@ -7,6 +7,7 @@ import {
   AdjustmentsHorizontalIcon
 } from '@heroicons/react/24/outline';
 import TeacherCard from '../components/TeacherCard';
+import { Link } from 'react-router-dom';
 
 export default function Teachers() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,7 +22,7 @@ export default function Teachers() {
       id: 1,
       name: 'Jane Smith',
       subject: 'Physics',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_1.jpg',
       rating: 4.9,
       reviews: 98,
       location: 'Surulere, Lagos',
@@ -37,7 +38,7 @@ export default function Teachers() {
       id: 2,
       name: 'John Doe',
       subject: 'Mathematics',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_2.jpg',
       rating: 4.8,
       reviews: 124,
       location: 'Ikoyi, Lagos',
@@ -51,14 +52,14 @@ export default function Teachers() {
     },
     {
       id: 3,
-      name: 'Mike Johnson',
+      name: 'Sarah Johnson',
       subject: 'Chemistry',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      rating: 4.7,
-      reviews: 156,
+      image: '/images/teacher_3.jpg',
+      rating: 4.9,
+      reviews: 112,
       location: 'Lekki, Lagos',
-      experience: '4 years',
-      hourlyRate: '₦4,500',
+      experience: '6 years',
+      hourlyRate: '₦5,500',
       education: [
         { degree: 'B.Sc. Chemistry', institution: 'University of Port Harcourt', year: '2016-2020' }
       ],
@@ -66,14 +67,14 @@ export default function Teachers() {
     },
     {
       id: 4,
-      name: 'Sarah Williams',
+      name: 'Mike Brown',
       subject: 'Biology',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      rating: 4.9,
-      reviews: 112,
+      image: '/images/teacher_4.jpg',
+      rating: 4.7,
+      reviews: 87,
       location: 'Ikeja, Lagos',
-      experience: '6 years',
-      hourlyRate: '₦5,500',
+      experience: '4 years',
+      hourlyRate: '₦4,500',
       education: [
         { degree: 'M.Sc. Biology', institution: 'University of Ibadan', year: '2017' },
         { degree: 'B.Sc. Biology', institution: 'University of Lagos', year: '2014' }
@@ -82,11 +83,11 @@ export default function Teachers() {
     },
     {
       id: 5,
-      name: 'David Brown',
+      name: 'Emily Davis',
       subject: 'English',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_5.jpg',
       rating: 4.8,
-      reviews: 89,
+      reviews: 95,
       location: 'Surulere, Lagos',
       experience: '8 years',
       hourlyRate: '₦5,000',
@@ -98,12 +99,12 @@ export default function Teachers() {
     },
     {
       id: 6,
-      name: 'Emily Davis',
+      name: 'David Wilson',
       subject: 'History',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_6.jpg',
       rating: 4.7,
-      reviews: 76,
-      location: 'Surulere, Lagos',
+      reviews: 78,
+      location: 'Ikoyi, Lagos',
       experience: '5 years',
       hourlyRate: '₦4,800',
       education: [
@@ -114,11 +115,11 @@ export default function Teachers() {
     },
     {
       id: 7,
-      name: 'Michael Wilson',
+      name: 'Lisa Martinez',
       subject: 'Geography',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_7.jpg',
       rating: 4.6,
-      reviews: 92,
+      reviews: 65,
       location: 'Lekki, Lagos',
       experience: '6 years',
       hourlyRate: '₦4,500',
@@ -130,12 +131,12 @@ export default function Teachers() {
     },
     {
       id: 8,
-      name: 'Jennifer Taylor',
+      name: 'Robert Anderson',
       subject: 'Art',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_8.jpg',
       rating: 4.9,
-      reviews: 108,
-      location: 'Ikoyi, Lagos',
+      reviews: 92,
+      location: 'Ikeja, Lagos',
       experience: '7 years',
       hourlyRate: '₦5,200',
       education: [
@@ -146,12 +147,12 @@ export default function Teachers() {
     },
     {
       id: 9,
-      name: 'Robert Anderson',
+      name: 'Jennifer Taylor',
       subject: 'Music',
-      image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_9.jpg',
       rating: 4.8,
       reviews: 84,
-      location: 'Ikeja, Lagos',
+      location: 'Surulere, Lagos',
       experience: '5 years',
       hourlyRate: '₦4,800',
       education: [
@@ -162,12 +163,12 @@ export default function Teachers() {
     },
     {
       id: 10,
-      name: 'Lisa Martinez',
+      name: 'Michael Clark',
       subject: 'Physical Education',
-      image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_10.jpg',
       rating: 4.7,
-      reviews: 96,
-      location: 'Surulere, Lagos',
+      reviews: 76,
+      location: 'Ikoyi, Lagos',
       experience: '6 years',
       hourlyRate: '₦4,500',
       education: [

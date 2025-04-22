@@ -3,7 +3,12 @@ import {
   AcademicCapIcon, 
   PhoneIcon, 
   EnvelopeIcon, 
-  BuildingOfficeIcon 
+  BuildingOfficeIcon,
+  HomeIcon,
+  UserGroupIcon,
+  BriefcaseIcon,
+  ChatBubbleLeftRightIcon,
+  PhoneArrowUpRightIcon
 } from '@heroicons/react/24/outline';
 
 export default function Footer() {
@@ -42,27 +47,32 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Quick Links</h3>
           <ul className="mt-4 space-y-4">
             <li>
-              <Link to="/" className="text-base text-gray-300 hover:text-white">
+              <Link to="/" className="text-base text-gray-300 hover:text-white flex items-center">
+                <HomeIcon className="h-5 w-5 mr-2" />
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/teachers" className="text-base text-gray-300 hover:text-white">
+              <Link to="/teachers" className="text-base text-gray-300 hover:text-white flex items-center">
+                <UserGroupIcon className="h-5 w-5 mr-2" />
                 Find Teachers
               </Link>
             </li>
             <li>
-              <Link to="/jobs" className="text-base text-gray-300 hover:text-white">
+              <Link to="/jobs" className="text-base text-gray-300 hover:text-white flex items-center">
+                <BriefcaseIcon className="h-5 w-5 mr-2" />
                 Browse Jobs
               </Link>
             </li>
             <li>
-              <Link to="/feedback" className="text-base text-gray-300 hover:text-white">
+              <Link to="/feedback" className="text-base text-gray-300 hover:text-white flex items-center">
+                <ChatBubbleLeftRightIcon className="h-5 w-5 mr-2" />
                 Feedback
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-base text-gray-300 hover:text-white">
+              <Link to="/contact" className="text-base text-gray-300 hover:text-white flex items-center">
+                <PhoneArrowUpRightIcon className="h-5 w-5 mr-2" />
                 Contact
               </Link>
             </li>

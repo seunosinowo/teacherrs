@@ -28,53 +28,53 @@ export default function TeacherProfile() {
         // Sample data - in a real app, this would come from an API
         const teacherData = {
           id: parseInt(id),
-          name: 'John Doe',
-          subject: 'Mathematics',
-          image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+          name: 'Jane Smith',
+          subject: 'Physics',
+          image: '/images/teacher_1.jpg',
           coverImage: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-          rating: 4.8,
-          reviews: 124,
-          location: 'Lagos',
-          experience: '5 years',
-          hourlyRate: '₦5,000',
+          rating: 4.9,
+          reviews: 98,
+          location: 'Surulere, Lagos',
+          experience: '7 years',
+          hourlyRate: '₦6,000',
           education: [
-            { degree: 'B.Sc. Mathematics', school: 'University of Lagos', year: '2015-2019' },
-            { degree: 'M.Sc. Applied Mathematics', school: 'University of Ibadan', year: '2019-2021' }
+            { degree: 'B.Sc. Physics', school: 'University of Lagos', year: '2015-2019' },
+            { degree: 'M.Sc. Applied Physics', school: 'University of Ibadan', year: '2019-2021' }
           ],
           certifications: [
-            'Certified Mathematics Teacher',
+            'Certified Physics Teacher',
             'Advanced Teaching Techniques',
             'Online Education Specialist'
           ],
-          about: 'I am a passionate mathematics teacher with 5 years of experience teaching at both high school and university levels. I specialize in calculus, algebra, and statistics. My teaching approach focuses on making complex concepts accessible and engaging for students of all levels.',
-          subjects: ['Mathematics', 'Calculus', 'Algebra', 'Statistics', 'Geometry'],
+          about: 'I am a passionate physics teacher with 7 years of experience teaching at both high school and university levels. I specialize in quantum mechanics, electromagnetism, and thermodynamics. My teaching approach focuses on making complex concepts accessible and engaging for students of all levels.',
+          subjects: ['Physics', 'Quantum Mechanics', 'Electromagnetism', 'Thermodynamics', 'Classical Mechanics'],
           availability: ['Monday', 'Wednesday', 'Friday', 'Saturday'],
           languages: ['English', 'French'],
           contact: {
             phone: '+234 123 456 7890',
-            email: 'john.doe@example.com',
-            website: 'www.johndoe.com'
+            email: 'jane.smith@example.com',
+            website: 'www.janesmith.com'
           },
           testimonials: [
             {
               id: 1,
               student: 'Michael Brown',
               rating: 5,
-              comment: "John is an exceptional teacher. He explains complex mathematical concepts in a way that's easy to understand. My grades improved significantly after just a few sessions with him.",
+              comment: "Jane is an exceptional teacher. She explains complex physical concepts in a way that's easy to understand. My grades improved significantly after just a few sessions with her.",
               date: '2 months ago'
             },
             {
               id: 2,
               student: 'Sarah Johnson',
               rating: 5,
-              comment: 'I was struggling with calculus until I started taking lessons with John. His patience and clear explanations helped me master the subject. Highly recommended!',
+              comment: 'I was struggling with electromagnetism until I started taking lessons with Jane. Her patience and clear explanations helped me master the subject. Highly recommended!',
               date: '1 month ago'
             },
             {
               id: 3,
               student: 'David Wilson',
               rating: 4,
-              comment: 'John is very knowledgeable and professional. He helped me prepare for my university entrance exams and I got into my first-choice school.',
+              comment: 'Jane is very knowledgeable and professional. She helped me prepare for my university entrance exams and I got into my first-choice school.',
               date: '3 months ago'
             }
           ]

@@ -30,7 +30,8 @@ export default function TeacherDetails() {
             id: 1,
             name: 'Jane Smith',
             subject: 'Physics',
-            image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_1.jpg',
+            coverImage: '/images/teacher_1.jpg',
             rating: 4.9,
             reviews: 98,
             location: 'Surulere, Lagos',
@@ -63,7 +64,8 @@ export default function TeacherDetails() {
             id: 2,
             name: 'John Doe',
             subject: 'Mathematics',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_2.jpg',
+            coverImage: '/images/teacher_2.jpg',
             rating: 4.8,
             reviews: 124,
             location: 'Ikoyi, Lagos',
@@ -94,14 +96,15 @@ export default function TeacherDetails() {
         } else if (id === '3') {
           teacherData = {
             id: 3,
-            name: 'Mike Johnson',
+            name: 'Sarah Johnson',
             subject: 'Chemistry',
-            image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            rating: 4.7,
-            reviews: 156,
+            image: '/images/teacher_3.jpg',
+            coverImage: '/images/teacher_3.jpg',
+            rating: 4.9,
+            reviews: 112,
             location: 'Lekki, Lagos',
-            experience: '4 years',
-            hourlyRate: '₦4,500',
+            experience: '6 years',
+            hourlyRate: '₦5,500',
             about: 'Passionate chemistry teacher with a background in organic and inorganic chemistry. Makes chemistry engaging through practical examples and experiments.',
             education: [
               { degree: 'B.Sc. Chemistry', institution: 'University of Port Harcourt', year: '2016-2020' }
@@ -118,7 +121,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Igbo'],
             contact: {
-              email: 'mike.johnson@gmail.com',
+              email: 'sarah.johnson@gmail.com',
               phone: '+234 803 456 7890'
             },
             subjects: ['Chemistry', 'Organic Chemistry', 'Inorganic Chemistry']
@@ -126,14 +129,15 @@ export default function TeacherDetails() {
         } else if (id === '4') {
           teacherData = {
             id: 4,
-            name: 'Sarah Williams',
+            name: 'Mike Brown',
             subject: 'Biology',
-            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            rating: 4.9,
-            reviews: 112,
+            image: '/images/teacher_4.jpg',
+            coverImage: '/images/teacher_4.jpg',
+            rating: 4.7,
+            reviews: 87,
             location: 'Ikeja, Lagos',
-            experience: '6 years',
-            hourlyRate: '₦5,500',
+            experience: '4 years',
+            hourlyRate: '₦4,500',
             about: 'Experienced biology teacher with a passion for life sciences. Specializes in cell biology, genetics, and ecology. Makes complex biological concepts accessible to students.',
             education: [
               { degree: 'M.Sc. Biology', institution: 'University of Ibadan', year: '2017' },
@@ -151,7 +155,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Yoruba'],
             contact: {
-              email: 'sarah.williams@gmail.com',
+              email: 'mike.brown@gmail.com',
               phone: '+234 804 567 8901'
             },
             subjects: ['Biology', 'Anatomy', 'Physiology']
@@ -159,11 +163,12 @@ export default function TeacherDetails() {
         } else if (id === '5') {
           teacherData = {
             id: 5,
-            name: 'David Brown',
+            name: 'Emily Davis',
             subject: 'English',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_5.jpg',
+            coverImage: '/images/teacher_5.jpg',
             rating: 4.8,
-            reviews: 89,
+            reviews: 95,
             location: 'Surulere, Lagos',
             experience: '8 years',
             hourlyRate: '₦5,000',
@@ -184,7 +189,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 10 AM - 6 PM, Weekends: 11 AM - 3 PM',
             languages: ['English', 'French'],
             contact: {
-              email: 'david.brown@gmail.com',
+              email: 'emily.davis@gmail.com',
               phone: '+234 805 678 9012'
             },
             subjects: ['English', 'Literature', 'Grammar']
@@ -192,11 +197,12 @@ export default function TeacherDetails() {
         } else if (id === '6') {
           teacherData = {
             id: 6,
-            name: 'Emily Davis',
+            name: 'David Wilson',
             subject: 'History',
-            image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_6.jpg',
+            coverImage: '/images/teacher_6.jpg',
             rating: 4.7,
-            reviews: 76,
+            reviews: 78,
             location: 'Ikoyi, Lagos',
             experience: '5 years',
             hourlyRate: '₦4,800',
@@ -217,7 +223,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Hausa'],
             contact: {
-              email: 'emily.davis@gmail.com',
+              email: 'david.wilson@gmail.com',
               phone: '+234 806 789 0123'
             },
             subjects: ['History', 'World History', 'African History']
@@ -225,11 +231,12 @@ export default function TeacherDetails() {
         } else if (id === '7') {
           teacherData = {
             id: 7,
-            name: 'Michael Wilson',
+            name: 'Lisa Martinez',
             subject: 'Geography',
-            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_7.jpg',
+            coverImage: '/images/teacher_7.jpg',
             rating: 4.6,
-            reviews: 92,
+            reviews: 65,
             location: 'Lekki, Lagos',
             experience: '6 years',
             hourlyRate: '₦4,500',
@@ -250,7 +257,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Igbo'],
             contact: {
-              email: 'michael.wilson@gmail.com',
+              email: 'lisa.martinez@gmail.com',
               phone: '+234 807 890 1234'
             },
             subjects: ['Geography', 'Physical Geography', 'Human Geography']
@@ -258,11 +265,12 @@ export default function TeacherDetails() {
         } else if (id === '8') {
           teacherData = {
             id: 8,
-            name: 'Jennifer Taylor',
+            name: 'Robert Anderson',
             subject: 'Art',
-            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_8.jpg',
+            coverImage: '/images/teacher_8.jpg',
             rating: 4.9,
-            reviews: 108,
+            reviews: 92,
             location: 'Ikeja, Lagos',
             experience: '7 years',
             hourlyRate: '₦5,200',
@@ -283,7 +291,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 10 AM - 6 PM, Weekends: 11 AM - 3 PM',
             languages: ['English', 'Yoruba'],
             contact: {
-              email: 'jennifer.taylor@gmail.com',
+              email: 'robert.anderson@gmail.com',
               phone: '+234 808 901 2345'
             },
             subjects: ['Art', 'Drawing', 'Painting', 'Sculpture']
@@ -291,9 +299,10 @@ export default function TeacherDetails() {
         } else if (id === '9') {
           teacherData = {
             id: 9,
-            name: 'Robert Anderson',
+            name: 'Jennifer Taylor',
             subject: 'Music',
-            image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_9.jpg',
+            coverImage: '/images/teacher_9.jpg',
             rating: 4.8,
             reviews: 84,
             location: 'Surulere, Lagos',
@@ -316,7 +325,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Yoruba'],
             contact: {
-              email: 'robert.anderson@gmail.com',
+              email: 'jennifer.taylor@gmail.com',
               phone: '+234 809 012 3456'
             },
             subjects: ['Music', 'Piano', 'Guitar', 'Music Theory']
@@ -324,11 +333,12 @@ export default function TeacherDetails() {
         } else if (id === '10') {
           teacherData = {
             id: 10,
-            name: 'Lisa Martinez',
+            name: 'Michael Clark',
             subject: 'Physical Education',
-            image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+            image: '/images/teacher_10.jpg',
+            coverImage: '/images/teacher_10.jpg',
             rating: 4.7,
-            reviews: 96,
+            reviews: 76,
             location: 'Ikoyi, Lagos',
             experience: '6 years',
             hourlyRate: '₦4,500',
@@ -349,7 +359,7 @@ export default function TeacherDetails() {
             availability: 'Weekdays: 9 AM - 5 PM, Weekends: 10 AM - 2 PM',
             languages: ['English', 'Hausa'],
             contact: {
-              email: 'lisa.martinez@gmail.com',
+              email: 'michael.clark@gmail.com',
               phone: '+234 810 123 4567'
             },
             subjects: ['Physical Education', 'Sports', 'Fitness', 'Athletics']

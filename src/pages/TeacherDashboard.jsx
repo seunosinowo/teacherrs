@@ -36,10 +36,10 @@ export default function TeacherDashboard() {
       id: 2,
       name: 'Jane Smith',
       subject: 'Physics',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: '/images/teacher_1.jpg',
       rating: 4.9,
       reviews: 98,
-      location: 'Abuja',
+      location: 'Surulere, Lagos',
       experience: '7 years',
       hourlyRate: '₦6,000'
     },
