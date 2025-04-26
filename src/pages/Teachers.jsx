@@ -16,7 +16,7 @@ export default function Teachers() {
   const [selectedExperience, setSelectedExperience] = useState('');
   const [priceRange, setPriceRange] = useState('');
 
-  // Sample data for teachers
+  // teachers
   const teachers = [
     {
       id: 1,
